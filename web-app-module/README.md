@@ -2,7 +2,7 @@
 
 > This project, a basic web app behind a load balancer, originates from [here](https://github.com/sidpalas/devops-directive-terraform-course "devops directive terraform course").
 
-> The child module "web-app-module" herein is called out from the root module "web-app"
+> The child module "web-app-module" herein is called out from the root module "workspaces"
 
 
 > It involves the following elements:
