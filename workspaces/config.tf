@@ -2,7 +2,7 @@
 # and backend setup for the root module
 
 terraform {
-
+    required_version = ">= 1.5.0"
   # Remote backend specified as S3 bucket
   backend "s3" {
     bucket         = "devops-demos-terraform-state-bucket"
@@ -15,7 +15,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~>5.2.0"
+      version = "~> 5.4.0"
     }
   }
 }
