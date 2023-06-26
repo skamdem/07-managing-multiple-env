@@ -2,7 +2,8 @@
 # and backend setup for the root module
 
 terraform {
-    required_version = ">= 1.5.0"
+  required_version = ">= 1.5.0"
+
   # Remote backend specified as S3 bucket
   backend "s3" {
     bucket         = "devops-demos-terraform-state-bucket"

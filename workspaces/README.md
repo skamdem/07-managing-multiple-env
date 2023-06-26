@@ -2,8 +2,8 @@
 
 > This project, a basic web app behind a load balancer, originates from [here](https://github.com/sidpalas/devops-directive-terraform-course "devops directive terraform course").
 
-> The project is organized around two active workspaces
-> "staging" and "production" 
+> The project is organized around multiple active workspaces
+> "dev", "staging" and "production" 
 
 ## List of commands:
 

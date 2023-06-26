@@ -4,7 +4,7 @@ resource "aws_instance" "instance_1" {
   ami           = var.instance_ami
   instance_type = var.instance_type
   tags = {
-    Name        = "${var.app_name}-${var.environment_name}"
+    Name        = "${var.subdomain}"
     "Terraform" = "Yes"
   }
 
@@ -20,7 +20,7 @@ resource "aws_instance" "instance_2" {
   ami           = var.instance_ami
   instance_type = var.instance_type
   tags = {
-    Name        = "${var.app_name}-${var.environment_name}"
+    Name        = "${var.subdomain}"
     "Terraform" = "Yes"
   }
 

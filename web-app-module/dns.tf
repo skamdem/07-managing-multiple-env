@@ -5,14 +5,10 @@ data "aws_route53_zone" "my_zone" {
   name = var.domain
 }
 
-locals {
-  prefix_of_subdomain = var.environment_name == "production" ? "" : "${var.environment_name}."
-}
-
-resource "aws_route53_record" "devops_subdomain" {
+resource "aws_route53_record" "web_app_subdomain" {
   count   = var.create_dns_record ? 1 : 0 # create the subdomain record if necessary
   zone_id = data.aws_route53_zone.my_zone.id
-  name    = "${local.prefix_of_subdomain}${var.subdomain}.${data.aws_route53_zone.my_zone.name}"
+  name    = "${var.subdomain}.${data.aws_route53_zone.my_zone.name}"
   type    = "A"
 
   alias {
