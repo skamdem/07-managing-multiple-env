@@ -1,5 +1,5 @@
 # Commonly ignored file patterns.
-# Mmore about .gitignore:
+# More about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 # Node artifact files
