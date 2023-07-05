@@ -43,4 +43,9 @@ variable "db_pass" {
   type        = string
   description = "password for database"
   sensitive   = true // with sensitive value
+
+  validation {
+    condition     = length(var.db_pass) >= 8
+    error_message = "The db_pass value must be >= 8"
+  }
 }

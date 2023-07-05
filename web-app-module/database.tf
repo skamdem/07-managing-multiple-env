@@ -8,6 +8,6 @@ resource "aws_db_instance" "default" {
   identifier          = "${var.subdomain}-db" //name of the RDS instance
   db_name             = var.db_name
   username            = var.db_user
-  password            = var.db_pass
+  password            = var.db_pass // password for the master DB user
   skip_final_snapshot = true
 }
